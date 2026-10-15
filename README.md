@@ -1,10 +1,12 @@
+<img width="1281" height="239" alt="rehearsal-room-booking" src="https://github.com/user-attachments/assets/96b9e0ed-1a48-4e7c-b13c-6f08887207c6" />
+
 # Rehearsal Room Booking
 
 A project which contains laboratory works for the discipline "Software Engineering Components (Part 2: Software Requirements Modeling and Analysis)", Igor Sikorsky Kyiv Polytechnic Institute, 2026.
 
-![](https://img.shields.io/badge/DIAGRAMS-MERMAID-ff69b4?style=for-the-badge)
+![](https://img.shields.io/badge/DIAGRAMS-MERMAID-482B42?style=for-the-badge)
 ![](https://img.shields.io/badge/DOCS-MARKDOWN-black?style=for-the-badge)
-![](https://img.shields.io/badge/STATUS-IN_PROGRESS-gold?style=for-the-badge)
+![](https://img.shields.io/badge/STATUS-IN_PROGRESS-23342C?style=for-the-badge)
 
 ---
 
