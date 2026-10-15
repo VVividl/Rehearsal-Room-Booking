@@ -4,7 +4,7 @@
 **Intent:** To design a logical data model for a Rehearsal Room Booking service that captures room reservations and the rental of additional musical equipment.
 **Criteria:** The model is normalized to 3NF, has no implicit Many-to-Many (M:N) relationships, ensures the preservation of historical financial data, and the ER diagram perfectly matches the `spec.md`.
 
-## 2. Top-3 Discrepancies
+## 2. Top-3 Discrepancies (spec ↔ model)
 During the design process, the following architectural flaws were identified and fixed:
 
 1. **1NF Violation (Flag Anti-pattern in Equipment):**
