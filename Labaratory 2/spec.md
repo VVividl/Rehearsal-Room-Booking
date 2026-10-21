@@ -60,3 +60,4 @@ To ensure clear communication between stakeholders and developers, we define our
 - **Given** a booking is in `PENDING` status
 - **When** the Payment Gateway returns a "200 OK" success status for the transaction
 - **Then** the system should change the booking status to `CONFIRMED`
+
