@@ -61,3 +61,19 @@ To ensure clear communication between stakeholders and developers, we define our
 - **When** the Payment Gateway returns a "200 OK" success status for the transaction
 - **Then** the system should change the booking status to `CONFIRMED`
 
+---
+
+## 8. Traceability Matrix
+
+This matrix demonstrates the alignment between formal EARS requirements, Use Cases from the UML diagram, and Gherkin behavior scenarios. It explicitly implements many-to-many (M:N) relationships across the board and identifies gaps in test coverage for future audits.
+
+| EARS Requirement | Associated Use Case(s) | Gherkin Scenario(s) | Status |
+| :--- | :--- | :--- | :--- |
+| **REQ-01**, **REQ-04** | UC-01, UC-02 | Scenario 1: Successful room booking | Covered (M:N) |
+| **REQ-01**, **REQ-02** | UC-02, UC-03 | Scenario 2: Capturing equipment price | Covered (M:N) |
+| **REQ-02**, **REQ-03** | UC-04, UC-05 | Scenario 3: Payment confirmation | Covered (M:N) |
+| **REQ-05** | UC-06 | *No Gherkin scenario defined* | **Uncovered Gap** |
+
+**Traceability Audit Notes:** 
+*   **M:N Relationships:** The matrix shows many-to-many relationships instead of simple 1:1 links. For example, `REQ-02` (Equipment pricing) is connected to both `UC-02` and `UC-03` because adding equipment is a part of the booking process. Also, both `REQ-02` and `REQ-03` are linked to payment scenarios (`UC-04`, `UC-05`) because the final price depends on both the room and the equipment.
+*   **Identified Gap:** `REQ-05` (Cancellation) is linked to `UC-06`, but it does not have a Gherkin test scenario. I left this requirement uncovered on purpose to show how we can find missing tests during an audit.
