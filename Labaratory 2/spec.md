@@ -30,7 +30,7 @@ To ensure clear communication between stakeholders and developers, we define our
 - **US1 (Book a Room):** As a Client, I want to book an available rehearsal room for a specific time slot, so that my band has a place to practice.
 - **US2 (Rent Equipment):** As a Client, I want to add extra equipment to my booking, so that I don't have to transport my own gear.
 - **US3 (Payment Processing):** As a Payment Gateway, I want to notify the system of a successful transaction, so that the client's booking status changes to `CONFIRMED`.
-- **US4 (Late Cancellation):** As a Client, I want to cancel my booking in case of some circumstences, so that the room becomes available for others.*(Note: This story is intentionally left without a Gherkin test scenario to demonstrate traceability gaps).*
+- **US4 (Late Cancellation):** As a Client, I want to cancel my booking in case of some circumstences, so that the room becomes available for others. *(Note: This story is intentionally left without a Gherkin test scenario to demonstrate traceability gaps).*
 
 ### 2) EARS Requirements
 
