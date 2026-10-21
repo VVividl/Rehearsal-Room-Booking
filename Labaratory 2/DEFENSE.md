@@ -1,4 +1,4 @@
-# DEFENSE - Task 2: Requirements and Use Cases
+# Task 2: Requirements and Use Cases
 
 **Intent and criteria:**
 The main goal of this assignment is to formalize the behavior of the Rehearsal Room Booking system using EARS requirements, User Stories, and Gherkin scenarios. It also aims to visualize actor interactions through a Use Case diagram with complex traceability links.
