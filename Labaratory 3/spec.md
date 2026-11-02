@@ -28,3 +28,24 @@ The participants are mapped directly to the database entities from the Lab 1 ER 
 4. The RoomRepository reports that the room is occupied (returns `false`).
 5. The BookingService immediately throws an error exception (`RoomNotAvailableError`) back to the BookingUI.
 6. The BookingUI displays an error message, prompting the Client to select a different time.
+
+---
+
+### Audit: Scenario 1 (Successful Booking + Equipment)
+
+| Gherkin Step (Lab 2) | Corresponding Sequence Diagram Step (Lab 3) |
+| :--- | :--- |
+| **Given** the selected room is available for the specified time | `BookingService` calls `checkAvailability()` on `RoomRepo`. Entry condition for `alt`: `[isAvailable == true]`. |
+| **When** the client submits a booking request | `Client` calls `submitBooking(roomId, date, time, eqList)` via `BookingUI`. |
+| **And** the client adds optional equipment | `opt` block `[eqList is not empty]`: the system calls `saveEquipmentReservation(eqList)`. |
+| **Then** the system saves the new booking | `BookingService` calls `saveBooking(...)` in `BookingRepo`. |
+| **And** the user receives a success confirmation | `BookingUI` executes `displayConfirmation(bookingId)` for the `Client`. |
+
+### Audit: Scenario 2 (Alternative Flow - Rejection)
+
+| Gherkin Step (Lab 2) | Corresponding Sequence Diagram Step (Lab 3) |
+| :--- | :--- |
+| **Given** the selected room is already occupied by another band | `RoomRepo` returns the check result. Entry condition for `else`: `[isAvailable == false]`. |
+| **When** the client submits a booking request | `Client` calls `submitBooking(roomId, date, time, eqList)` via `BookingUI`. |
+| **Then** the system aborts the creation process | `BookingService` throws a `RoomNotAvailableError` exception (data is not saved). |
+| **And** the user sees an error message | `BookingUI` executes `displayErrorMessage("Room occupied")` for the `Client`. |
