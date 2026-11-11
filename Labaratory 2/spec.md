@@ -1,4 +1,6 @@
-## 6. Actors and Goals
+# 2. Requirements And Use Cases (UC + Gherkin + EARS + NFR)
+
+## 1. Actors and Goals
 
 To define the system boundaries and interaction workflows, there is two primary actors (one human and one external service):
 
@@ -21,7 +23,7 @@ An external API responsible for processing financial transactions.
 
 ---
 
-## 7. Requirements and Scenarios
+## 2. Requirements and Scenarios
 
 To ensure clear communication between stakeholders and developers, we define our requirements using three distinct formats: User Stories (agile), EARS (formal system requirements), and Gherkin (testable behavior).
 
@@ -63,7 +65,7 @@ To ensure clear communication between stakeholders and developers, we define our
 
 ---
 
-## 8. Traceability Matrix
+## 3. Traceability Matrix
 
 This matrix demonstrates the alignment between formal EARS requirements, Use Cases from the UML diagram, and Gherkin behavior scenarios. It explicitly implements many-to-many (M:N) relationships across the board and identifies gaps in test coverage for future audits.
 
