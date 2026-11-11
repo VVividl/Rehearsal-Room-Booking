@@ -1,4 +1,4 @@
-# Data Model Specification: Rehearsal Room Booking (spec.md)
+# 1. Data Model Specification: Rehearsal Room Booking (spec.md)
 
 ## 1. Entities and Attributes Description
 
